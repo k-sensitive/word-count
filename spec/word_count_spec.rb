@@ -14,7 +14,11 @@ describe('String#word_count') do
     expect("ThY".word_count("tHy is thy")).to(eq(2))
   end
 
-  it('handles punctuation') do
+  it('handles commas') do
     expect("happy".word_count("I am so happy, HaPpy, HAPPY to be coding")).to(eq(3))
+  end
+
+  it('handles all punctuation') do
+    expect("Best".word_count("Best best: bEST, BEST! !best")).to(eq(5))
   end
 end
