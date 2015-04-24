@@ -21,17 +21,6 @@ class String
         # count does not increment
       end
     end
-    # word_list = phrase.downcase.split(" ")
-    # word_list.each() do |no_space|
-    #   no_commas = no_space.split(",")
-    #   no_commas.each() do |word|
-    #     if self.eql?(word)
-    #       count += 1
-    #     else
-    #       # count does not increment
-    #     end
-    #   end
-    # end
     count
   end
 end
