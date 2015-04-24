@@ -2,7 +2,7 @@ class String
   define_method(:word_count) do |phrase|
     count = 0
     hold_char = []
-    punctuation = ","
+    punctuation = ",.?!;:"
     self.downcase!()
     characters = phrase.downcase.split("")  # separate characters
     characters.each() do |a_char|
