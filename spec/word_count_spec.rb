@@ -10,11 +10,11 @@ describe('String#word_count') do
     expect("a".word_count("a is a letter")).to(eq(2))
   end
 
-  it('handles all uppercase entries in word and string input') do
-    expect("THY".word_count("THY is thy")).to(eq(2))
-  end
-
   it('handles mix case entries') do
     expect("ThY".word_count("tHy is thy")).to(eq(2))
+  end
+
+  it('handles punctuation') do
+    expect("happy".word_count("I am so happy, HaPpy, HAPPY to be coding")).to(eq(3))
   end
 end
