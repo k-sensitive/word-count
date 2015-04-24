@@ -1,24 +1,24 @@
 class String
   define_method(:word_count) do |phrase|
     count = 0
-    hold_char = []
-    punctuation = ",.?!;:"
-    self.downcase!()
+    letters = []
+    punctuation = ',.?!;:()[]{}"'
+    downcase!()
     characters = phrase.downcase.split("")  # separate characters
-    characters.each() do |a_char|
-      if punctuation.include?(a_char)
-        #if a_char is a punctuation, ignore it
+    characters.each() do |a_character|
+      if punctuation.include?(a_character)
+        # ignore it
       else
-        hold_char.push(a_char)
+        letters.push(a_character)
       end
     end
-    hold_phrase = hold_char.join("")   # contains phrase minus punctuations
+    hold_phrase = letters.join("")   # phrase minus punctuations
     word_list = hold_phrase.split(" ")
     word_list.each() do |word|
       if word.eql?(self)
         count += 1
       else
-        # count does not increment
+        # no count increment
       end
     end
     count
