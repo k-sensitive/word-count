@@ -13,4 +13,8 @@ describe('String#word_count') do
   it('handles all uppercase entries in word and string input') do
     expect("THY".word_count("THY is thy")).to(eq(2))
   end
+
+  it('handles mix case entries') do
+    expect("ThY".word_count("tHy is thy")).to(eq(2))
+  end
 end
