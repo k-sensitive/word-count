@@ -19,6 +19,6 @@ describe('String#word_count') do
   end
 
   it('handles all punctuation') do
-    expect("Best".word_count("Best best: bEST, BEST! ;best")).to(eq(5))
+    expect("Best".word_count("happy at Best best: bEST, BEST! ;best happy!")).to(eq(5))
   end
 end
