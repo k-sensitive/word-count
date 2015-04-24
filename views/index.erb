@@ -1,12 +1,17 @@
-<h1>Word Counter</h1>
+<div class="container">
+  <div class="jumbotron">
+    <h1 align="center">Word Counter</h1>
+    <p align="center">Find out how frequently a word appears in some text!</p>
+  </div>
   <form action="/count">
     <div class ="form-group">
-      <label for="target_word">Word</label>
+      <label for="target_word">Word:</label>
       <input id="target_word" name="target_word" class="form-control" type="text">
     </div>
     <div class ="form-group">
-      <label for="sentence">Phrase</label>
+      <label for="sentence">Enter some text here:</label>
       <input id="sentence" name="sentence" class="form-control" type="text">
     </div>
     <button type="submit" class="btn-success">Count</button>
   </form>
+</div>
