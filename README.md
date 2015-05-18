@@ -2,7 +2,7 @@
 
 By: Kim Dang
 
-Word Counter determines how frequently a word appears in a given string.
+Word Counter determines how frequently a word appears in a given string. This app was written as an assignent to get a better understanding of sinatra, capybara and tdd.
 
 Setup Instructions
 ----
